@@ -4,4 +4,18 @@ module.exports = function(app, Order) {
             res.json(docs);
         })
     });
+    app.post('/v1/order', function(req, res) {
+        Order.create({
+            user: req.body.name,
+            place: req.body.place,
+            isOpen: true,
+            items: []
+        }, function (err, order) {
+            if (err) {
+                res.status(500).send();
+            } else {
+                res.status(200).send();
+            }
+        });
+    });
 };

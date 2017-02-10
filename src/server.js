@@ -27,7 +27,8 @@ var server = require('http').createServer(app);
 var Order = require('./models/order.js');
 
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_PORT.replace('tcp://', 'mongodb://'));
+mongoose.connect("mongodb://mongodb");
+// mongoose.connect(process.env.MONGODB_PORT.replace('tcp://', 'mongodb://'));
 
 var path = require('path');
 
