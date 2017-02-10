@@ -24,7 +24,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 var server = require('http').createServer(app);
-var Order = require('./model/order.js');
+var Order = require('./models/order.js');
 
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_PORT.replace('tcp://', 'mongodb://'));

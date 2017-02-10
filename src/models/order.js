@@ -7,7 +7,7 @@ var orderSchema = new Schema({
     place: String,
     isOpen: Boolean,
     items: [{
-        user: String
+        user: String,
         stuff: String
     }]
 });
