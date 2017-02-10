@@ -6,7 +6,7 @@ module.exports = function(app, Order) {
     });
     app.post('/v1/order', function(req, res) {
         Order.create({
-            user: req.body.name,
+            user: req.body.user,
             place: req.body.place,
             isOpen: true,
             items: []
