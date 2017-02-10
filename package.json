@@ -1,0 +1,24 @@
+{
+  "name": "orders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockkid777/orders.git"
+  },
+  "keywords": [
+    "orders",
+    "food",
+    "funproject"
+  ],
+  "author": "Ádám, Révész",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rockkid777/orders/issues"
+  },
+  "homepage": "https://github.com/rockkid777/orders#readme"
+}
