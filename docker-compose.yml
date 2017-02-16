@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+    web:
+        build: ./
+        volumes:
+            - './src/:/usr/bin/app/src'
+        ports:
+            - '80:8080'
+        links:
+            - 'mongodb:mongodb'
+        command: npm run start
+
+    mongodb:
+        image: mongo
+        volumes:
+            - "./db:/data/db"
+        ports:
+            - "27017:27017"
+    mongodb_admin:
+        image: "mongo-express"
+        ports:
+            - "8081:8081"
+        links:
+            - 'mongodb:mongo'
